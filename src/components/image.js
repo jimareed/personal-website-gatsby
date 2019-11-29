@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "block-diagram-editor.png" }) {
+      placeholderImage: file(relativePath: { eq: "block-diagram-editor.png" } ) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -26,7 +26,13 @@ const Image = () => {
     }
   `)
 
-  return <a href="block-diagram-editor"><Img fluid={data.placeholderImage.childImageSharp.fluid} /></a>
+  return  <div>
+            <p>
+              <a href="http://jimareed.com:5000">
+                <Img title="Block Diagram Editor" fluid={data.placeholderImage.childImageSharp.fluid} />
+              </a>
+            </p>
+          </div>
 }
 
 export default Image

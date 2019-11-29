@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          Built with
+          This website was built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
