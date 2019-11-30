@@ -2,8 +2,11 @@ FROM node:latest
 
 RUN npm install -g gatsby-cli
 
-RUN mkdir /home/node/app
-WORKDIR /home/node/app
+RUN mkdir -p /usr/src/app
+ADD . /usr/src/app
+WORKDIR /usr/src/app
+
+RUN npm install
 
 EXPOSE 8000
 
