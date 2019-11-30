@@ -4,13 +4,33 @@
 
 ```
 npm i -g gatsby-cli
+npm install
 gatsby develop
 ```
 
+## Run
+> http://localhost:8000
+
+## Cleanup
 ```
-docker build --tag gatsby-website-image .
-docker run --name gatsby-website -p 8000:8000 -d gatsby-website-image
+rm -rf .cache
+rm -rf public
+rm -rf node_modules
 ```
+
+## Development - Graphql
+> http://localhost:8000/___graphql
+
+## Docker Build
+```
+docker build --tag personal-website-image .
+docker run --name personal-website -p 8000:8000 -d personal-website-image
+```
+or
+```
+docker run --name personal-website -p 8000:8000 -d /jimareed/personal-website-gatsby
+```
+
 
 
 
@@ -114,8 +134,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 
 
-# gatsby-website
-
-docker build --tag gatsby-website-image .
-
-docker run --name gatsby-website -p 80:80 -d gatsby-website-image
