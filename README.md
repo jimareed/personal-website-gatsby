@@ -34,7 +34,8 @@ npm i gatsby-source-filesystem gatsby-transformer-remark gatsby-plugin-catch-lin
       }
     }
   }
-}```
+}
+```
 
 ## Development - Graphql
 > http://localhost:8000/___graphql
