@@ -18,6 +18,24 @@ rm -rf public
 rm -rf node_modules
 ```
 
+## Notes
+npm i gatsby-source-filesystem gatsby-transformer-remark gatsby-plugin-catch-links
+
+```
+{
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          title
+          path
+        }
+        excerpt
+      }
+    }
+  }
+}```
+
 ## Development - Graphql
 > http://localhost:8000/___graphql
 
