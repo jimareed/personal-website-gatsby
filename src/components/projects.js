@@ -90,6 +90,13 @@ const Projects = () => {
           }
         }
       }
+      image12: file(relativePath: { eq: "projects/slideshow.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -117,8 +124,8 @@ const Projects = () => {
                 </td>                
                 <td width="320px">
                   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                    <a href="https://github.com/jimareed/image2diagram">
-                      <Img title="image2diagram" fluid={data.image2.childImageSharp.fluid} />
+                  <a href="http://jimareed.com:8080">
+                      <Img title="Slideshow" fluid={data.image12.childImageSharp.fluid} />
                     </a>
                     <br />
                     <a href="https://github.com/jimareed/qlik-mashup">
@@ -145,11 +152,13 @@ const Projects = () => {
                       <Img title="Metrics Tutorial" fluid={data.image9.childImageSharp.fluid} />
                     </a>
                     <br />
+                    <a href="https://github.com/jimareed/image2diagram">
+                      <Img title="image2diagram" fluid={data.image2.childImageSharp.fluid} />
+                    </a>
+                    <br />
                     <a href="https://github.com/jimareed/docker-deployer">
                       <Img title="Docker Deployer" fluid={data.image6.childImageSharp.fluid} />
                     </a>
-                    <br />
-                      <Img fluid={data.blank.childImageSharp.fluid} />
                   </div>
                 </td>                
               </tr>
