@@ -97,6 +97,69 @@ const Projects = () => {
           }
         }
       }
+      image13: file(relativePath: { eq: "projects/slideshow-editor.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image14: file(relativePath: { eq: "projects/casbin-auth0-rbac-backend.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image15: file(relativePath: { eq: "projects/react-auth0-login.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image16: file(relativePath: { eq: "projects/auth0-rbac.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image17: file(relativePath: { eq: "projects/casbin-rbac.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image18: file(relativePath: { eq: "projects/circleci-build.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image19: file(relativePath: { eq: "projects/deploy-react-auth0.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image20: file(relativePath: { eq: "projects/qlik-event-monitoring.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image21: file(relativePath: { eq: "projects/basic-qlik-mashup.png" } ) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -105,12 +168,24 @@ const Projects = () => {
               <tr>
                 <td width="320px">
                   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                    <a href="http://jimareed.com:5000">
-                      <Img title="Block Diagram Editor" fluid={data.image1.childImageSharp.fluid} />
+                  <a href="https://jimareed-projects.ca">
+                      <Img title="Slideshow Editor" fluid={data.image13.childImageSharp.fluid} />
                     </a>
                     <br />
-                    <a href="https://github.com/jimareed/helm-chart-tutorial">
-                      <Img title="Helm Chart Tutorial" fluid={data.image4.childImageSharp.fluid} />
+                    <a href="https://github.com/jimareed/chordpro-editor">
+                      <Img title="Chordpro Editor" fluid={data.image3.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/casbin-rbac">
+                      <Img title="Casbin RBAC" fluid={data.image17.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/react-auth0-login">
+                      <Img title="React Auth0 Login" fluid={data.image15.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/basic-qlik-mashup">
+                      <Img title="Basic Qlik Mashup" fluid={data.image21.childImageSharp.fluid} />
                     </a>
                     <br />
                     <a href="https://github.com/jimareed/postman-api-systest">
@@ -124,8 +199,20 @@ const Projects = () => {
                 </td>                
                 <td width="320px">
                   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                  <a href="http://jimareed.com:8080">
-                      <Img title="Slideshow" fluid={data.image12.childImageSharp.fluid} />
+                    <a href="http://jimareed.com:5000">
+                      <Img title="Block Diagram Editor" fluid={data.image1.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/helm-chart-tutorial">
+                      <Img title="Helm Chart Tutorial" fluid={data.image4.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/auth0-rbac">
+                      <Img title="Auth0 RBAC" fluid={data.image16.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/circleci-build">
+                      <Img title="CircleCI Build" fluid={data.image18.childImageSharp.fluid} />
                     </a>
                     <br />
                     <a href="https://github.com/jimareed/qlik-mashup">
@@ -144,8 +231,20 @@ const Projects = () => {
                 </td>                
                 <td width="320px">
                   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                    <a href="https://github.com/jimareed/chordpro-editor">
-                      <Img title="Chordpro Editor" fluid={data.image3.childImageSharp.fluid} />
+                    <a href="https://github.com/jimareed/casbin-auth0-rbac-backend">
+                      <Img title="Casbin Auth0 RBAC Backend" fluid={data.image14.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="http://jimareed.com:8080">
+                      <Img title="Slideshow" fluid={data.image12.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/deploy-react-auth0">
+                      <Img title="Deploy React Auth0" fluid={data.image19.childImageSharp.fluid} />
+                    </a>
+                    <br />
+                    <a href="https://github.com/jimareed/qlik-event-monitoring">
+                      <Img title="Qlik Event Monitoring" fluid={data.image20.childImageSharp.fluid} />
                     </a>
                     <br />
                     <a href="https://github.com/jimareed/metrics-tutorial">

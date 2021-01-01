@@ -10,7 +10,7 @@ Personal website built with Gastby.
 ## Setup
 
 ```
-npm i -g gatsby-cli
+npm install -g gatsby-cli
 npm install
 gatsby develop
 ```
